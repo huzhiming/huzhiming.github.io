@@ -171,7 +171,7 @@
 
     // lazyload(); //页面载入完毕加载可是区域内的图片
     // window.onscroll = lazyload;
-    //
+    // <img src="" data-src="" err-src="" alt="">
     //图片懒加载
     var _lazyload = function () { //监听页面滚动事件
         var num = document.getElementsByTagName('img').length;
@@ -186,6 +186,13 @@
                     img[i].src = img[i].getAttribute("data-src");
                 }
                 n = i + 1;
+                
+                if (img[i].getAttribute("src")==="") {
+                    img[i].src = img[i].getAttribute("err-src");
+                }
+                img[i].onerror = function(){
+                    img[i].src = img[i].getAttribute("err-src");
+                }
             }
         }
     }
