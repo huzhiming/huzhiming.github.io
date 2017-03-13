@@ -196,16 +196,29 @@
             }
         }
     }
-
-
+    //去除首尾空格 ' ss ll ' => 'ss ll'
+    var _trim = function(str){
+        if(String.prototype.trim){
+            return str == null ? "" : String.prototype.trim.call(str);
+        }else{
+            return str.replace(/(^\s*)|(\s*$)/g, "");
+        }
+    }
+    //去除全部空格 ' ss ll ' => 'ssll'
+    var _trimAll = function(str){
+        return str.replace(/\s*/g,'');
+    }
+    
     function Common(){}
     Common.prototype = {
         constructor:Common,
-        lazyload:_lazyload,
-        extend:_extend,
-        getQueryString:_getQueryString,
-        loadScript:_loadScript,
-        dataFormat:_dataFormat
+        lazyload:_lazyload,//图片懒加载
+        extend:_extend,//对象合并，未完全脱离jquery
+        getQueryString:_getQueryString,//获取url上的参数值
+        loadScript:_loadScript,//异步加载脚本文件
+        dataFormat:_dataFormat,//时间格式化
+        trim:_trim,//去除首尾空格
+        trimAll:_trimAll,//去除全部空格
     }
     var common = new Common();
     window.common = common;
