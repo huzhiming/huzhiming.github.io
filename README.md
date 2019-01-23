@@ -1,12 +1,22 @@
 <h1 id="目录">目录</h1>
 
-1. [javascript设计模式 ](#javascript设计模式)
-2. [javascript标准库](#javascript标准库)
-3. [Node.js最佳实践](#Node.js最佳实践)
+[javascript设计模式 ](#javascript设计模式)
+
+[javascript标准库](#javascript标准库)
+
+[Node.js最佳实践](#Node.js最佳实践)
+
+[基于色键技术的纯客户端实时蒙版弹幕实现](#基于色键技术的纯客户端实时蒙版弹幕实现)
+
+
+
+
 
 
 
 <h1 id="javascript设计模式">javascript设计模式</h1>
+
+
 
 [单例模式.md](./javascript设计模式/单例模式.md)
 
@@ -72,9 +82,14 @@ Object：
 
 
 
+
+
 <p align="right"><a href="#目录">⬆ 返回顶部</a></p>
 
+<h1 id="基于色键技术的纯客户端实时蒙版弹幕实现">基于色键技术的纯客户端实时蒙版弹幕实现</h1>
 
+文章：https://mp.weixin.qq.com/s/wFnIFa9HWeeVpyAYWAQE4w
+源码：https://github.com/parksben/masking-danmaku-demo
 
 
 
