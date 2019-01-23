@@ -1,4 +1,11 @@
-# 胡志明的博客
+
+
+[TOC]
+
+
+
+# javascript设计模式
+
 [单例模式.md](./javascript设计模式/单例模式.md)
 
 [策略模式.md](./javascript设计模式/策略模式.md)
@@ -26,4 +33,49 @@
 [状态模式.md](./javascript设计模式/状态模式.md)
 
 [适配器模式.md](./javascript设计模式/适配器模式.md)
+
+
+
+# javascript标准库
+
+Object
+
+
+
+
+
+
+
+
+
+
+
+# Node.js 最佳实践
+
+[英文]: https://github.com/i0natan/nodebestpractices
+[中文]: https://github.com/i0natan/nodebestpractices/blob/master/README.chinese.md
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
