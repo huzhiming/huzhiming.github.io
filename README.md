@@ -6,8 +6,6 @@
 
 
 
-
-
 <h1 id="javascript设计模式">javascript设计模式</h1>
 
 [单例模式.md](./javascript设计模式/单例模式.md)
@@ -46,7 +44,15 @@
 
 <h1 id="javascript标准库">javascript标准库</h1>
 
-Object
+Object：
+
+
+
+
+
+
+
+
 
 
 
@@ -60,10 +66,9 @@ Object
 
 <h1 id="Node.js最佳实践">Node.js最佳实践</h1>
 
-[英文]: https://github.com/i0natan/nodebestpractices	"英文文档"
-[中文]: https://github.com/i0natan/nodebestpractices/blob/master/README.chinese.md	"中文文档"
+英文文档：https://github.com/i0natan/nodebestpractices
 
-
+中文翻译：https://github.com/i0natan/nodebestpractices/blob/master/README.chinese.md
 
 
 
