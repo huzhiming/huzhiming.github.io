@@ -54,9 +54,43 @@
 
 <h1 id="javascript标准库">javascript标准库</h1>
 
-Object：
 
 
+**Arrar构造函数方法**
+
+1. Arrar.form(arrlike,fn,this)：从类数组对象或可迭代对象中创建一个新数组实例
+
+2. Array.of(arg1,arg2,...)：根据一组参数来创建新数组实例，支持任意参数数量和类型
+
+   > 以上两种方法可代替es5实现：Array.prototype.slice.call(类数组对象)
+
+3. Array.isArray(arr): 用来判断某个对象是否是一个数组对象
+
+
+
+**Array.prototype方法**
+
+修改器方法：
+
+1. Array.prototype.copyWithin(target, start,end): 在数组内部，将一段元素序列拷贝到另一段元素序列上，覆盖原有值
+
+2. Array.prototype.fill(val, start,end): 将数组中指定区间的所有元素的值，都替换成某个固定的值
+
+   > var array1 = [1, 2, 3, 4]; console.log(array1.fill(0, 2, 4)); // 从第2位填充0到第4位 [1, 2, 0, 0]
+
+3. Array.prototype.pop(): 删除数组的最后一个元素，并返回这个元素
+
+4. Array.prototype.push(): 在数组的末尾增加一个元素或多个元素，并返回该数组新长度。
+
+5. Array.prototype.reverse(): 颠倒数组中的排序顺序，原先的第一个变为最后一个，最后一个变为第一个
+
+6. Array.prototype.shift(): 删除数组的第一个元素，并返回这个元素
+
+7. Array.prototype.unshift(): 在数组的开头增加一个或多个元素，并返回该数组新长度
+
+8. Array.prototype.sort()
+
+9. Array.prototype.splice(start,delIndex,addItem1,...):在任意位置给数组添加或删除任意个元素
 
 
 
