@@ -1,5 +1,4 @@
 <h1 id="目录">目录</h1>
-
 [javascript设计模式 ](#javascript设计模式)
 
 [javascript标准库](#javascript标准库)
@@ -15,7 +14,6 @@
 
 
 <h1 id="javascript设计模式">javascript设计模式</h1>
-
 
 
 [单例模式.md](./javascript设计模式/单例模式.md)
@@ -51,9 +49,7 @@
 
 
 <p align="right"><a href="#目录">⬆ 返回顶部</a></p>
-
 <h1 id="javascript标准库">javascript标准库</h1>
-
 
 
 **Arrar构造函数方法**
@@ -94,22 +90,17 @@
 
 
 
+动态创建数组：
 
-
-
-
-
-
-
-
-
+```js
+Array.from({ length: 3 }, () => null);// [null,null,null]
+Array(3).fill(null); // [null,null,null]
+```
 
 
 
 <p align="right"><a href="#目录">⬆ 返回顶部</a></p>
-
 <h1 id="Node.js最佳实践">Node.js最佳实践</h1>
-
 英文文档：https://github.com/i0natan/nodebestpractices
 
 中文翻译：https://github.com/i0natan/nodebestpractices/blob/master/README.chinese.md
@@ -119,15 +110,22 @@
 
 
 <p align="right"><a href="#目录">⬆ 返回顶部</a></p>
-
 <h1 id="基于色键技术的纯客户端实时蒙版弹幕实现">基于色键技术的纯客户端实时蒙版弹幕实现</h1>
-
 文章：https://mp.weixin.qq.com/s/wFnIFa9HWeeVpyAYWAQE4w
 源码：https://github.com/parksben/masking-danmaku-demo
 
 
 
+# 代码校验Eslint篇
 
+Eslint 配置及规则说明：
+https://blog.csdn.net/hsl0530hsl/article/details/78594973
+
+https://www.cnblogs.com/nklong/p/7233631.html
+
+
+
+详解JS函数柯里化: <https://www.jianshu.com/p/2975c25e4d71>
 
 
 
