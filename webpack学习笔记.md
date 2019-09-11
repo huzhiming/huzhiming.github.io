@@ -1,7 +1,7 @@
-> 参考原文链接：
-> <https://cloud.tencent.com/developer/article/1356611> 腾讯云专栏
->
-> <https://www.jianshu.com/p/bb1e76edc71e> 简书播客
+参考原文链接：
+<https://cloud.tencent.com/developer/article/1356611> 腾讯云专栏
+
+<https://www.jianshu.com/p/bb1e76edc71e> 简书播客
 
 ### 什么是webpack
 
