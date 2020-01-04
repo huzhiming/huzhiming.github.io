@@ -15,7 +15,6 @@
 
 <h1 id="javascript设计模式">javascript设计模式</h1>
 
-
 [单例模式.md](./javascript设计模式/单例模式.md)
 
 [策略模式.md](./javascript设计模式/策略模式.md)
@@ -50,7 +49,6 @@
 
 <p align="right"><a href="#目录">⬆ 返回顶部</a></p>
 <h1 id="javascript标准库">javascript标准库</h1>
-
 
 **Arrar构造函数方法**
 
@@ -129,7 +127,9 @@ https://www.cnblogs.com/nklong/p/7233631.html
 
 
 
+#### 免费cdn-jsdelivr
 
+https://cdn.jsdelivr.net/npm/zhiming-tools/
 
 
 
