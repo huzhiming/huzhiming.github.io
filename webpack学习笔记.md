@@ -90,3 +90,27 @@ webpack 的运行流程是一个串行的过程，从启动到结束会依次执
 在以上过程中，Webpack 会在特定的时间点广播出特定的事件，插件在监听到感兴趣的事件后会执行特定的逻辑，并且插件可以调用 Webpack 提供的 API 改变 Webpack 的运行结果。
 
 
+
+
+
+#### bable安装（代码翻译功能）
+
+```
+yarn add babel-loader babel-core babel-preset-env babel-plugin-transform-runtime -D
+
+// 根目录下新建.babelrc文件 or package.json 中babel字段 内容如下
+{
+  "presets": ["env"],
+  "plugins": ["transform-runtime"]
+}
+
+// 高级特性代码垫片，提供了一些低版本es标准对高级特性的实现
+// 注意：相比于runtime-transform，polifill用于应用开发中。会添加相应变量到全局，所以会污染全局变量。
+yarn add babel-polifill -D
+
+
+entry: ["babel-polifill", "./app.js"]
+
+```
+
+
