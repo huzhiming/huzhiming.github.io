@@ -290,9 +290,22 @@ function log<T extends Length>(value: T):T {
 
 #### 高级类型
 
-交叉类型
+交叉类型 T & U
+
+联合类型： T | U
 
 
+
+
+
+```
+内置工具类型：
+type A = Partial<T>   //构造一个类型，将T的所有属性设置为可选
+type A = Readonly<T>  //构造一个类型，将T的所有属性设置为只读
+type A = Recore<K,T>  //构造一个类型，将K的所有属性作为K  将T作为属性值赋值给
+
+
+```
 
 
 

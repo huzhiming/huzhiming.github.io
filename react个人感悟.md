@@ -341,3 +341,5 @@ import { Router, Route, Redirect, IndexRoute, browserHistory, hashHistory } from
 
 这项技术使我们共享行为非常容易。要获得这个行为，只要渲染一个带有 `render` prop 的 `<Mouse>` 组件就能够告诉它当前鼠标坐标 (x, y) 要渲染什么。
 
+
+
