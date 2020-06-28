@@ -1,7 +1,9 @@
 详细可参考廖雪峰老师[Git教程](https://www.liaoxuefeng.com/wiki/896043488029600)，以下列举
 
 ```bash
-iuuyixtwkyjfbfbi
+ssh-keygen -t rsa -C "your.email@example.com"
+pbcopy < ~/.ssh/id_rsa.pub
+
 # 创建新版本库
 git clone git@gitlab.wawaeg.com:web/wawaMall.git
 cd wawaMall
@@ -38,6 +40,9 @@ cd ~/you project
 git config user.name --global "huzhiming"  
 git config user.email --global "zhiming.hu@yoho.cn"
 
+git config --global user.name huzhiming
+git config --global user.email huzhiming@yunzhangfang.com
+
 # 在远程版本库创建了一个分支后，在本地创建远程追踪分支
 git remote update
 
@@ -56,6 +61,9 @@ git stash list 列出草稿
 git stash apply 使用草稿 用git stash drop删除
 git stash pop 恢复并删除
 
+# 图形化展示日志
+git log --graph
+
 # 创建tag
 git tag -a <tagname> -m "blablabla..."
 # 用命令git show <tagname>可以看到说明文字
@@ -68,6 +76,10 @@ git push origin --tags # 所有tag推送到远端服务器
 git reset --soft HEAD^
 # 修改注释
 git commit --amend
+
+# 设置 swoole 的远程上游地址，适用于fork的下游项目
+git remote add upstream https://github.com/swoole/swoole-src.git
+git pull upstream master
 ```
 
 #### 提交规范：
