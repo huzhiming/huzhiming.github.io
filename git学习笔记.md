@@ -12,7 +12,7 @@ git add README.md
 git commit -m "add README"
 git push -u origin master
 
-# 已存在的文件夹 
+# 已存在的文件夹
 cd existing_folder
 git init
 git remote add origin git@gitlab.wawaeg.com:web/wawaMall.git
@@ -31,13 +31,13 @@ ssh -T git@git.yoho.cn
 # 添加私钥
 ssh-add ~/.ssh/id_rsa
 # 确认私钥列表和
-ssh-add -l 
+ssh-add -l
 # 清空私钥列表
 ssh-add -D
 
 # 修改全局用户名和邮箱地址,局部去掉--global参数
-cd ~/you project                
-git config user.name --global "huzhiming"  
+cd ~/you project
+git config user.name --global "huzhiming"
 git config user.email --global "zhiming.hu@yoho.cn"
 
 git config --global user.name huzhiming
@@ -72,14 +72,22 @@ git show <tagname>
 git push origin v1.0 #将本地v1.0的tag推送到远端服务器
 git push origin --tags # 所有tag推送到远端服务器
 
-# 撤销commit 
+# 撤销commit
 git reset --soft HEAD^
 # 修改注释
 git commit --amend
+# 让某个文件失去版本控制
+git rm -r --cached xxx.md
 
 # 设置 swoole 的远程上游地址，适用于fork的下游项目
 git remote add upstream https://github.com/swoole/swoole-src.git
 git pull upstream master
+
+# git查看某个分支的创建者以及创建时间
+# 列出远程Git分支按作者排序的committerdate：
+git for-each-ref --format='%(committerdate) %09 %(authorname) %09 %(refname)' | sort -k5n -k2M -k3n -k4n
+# 然后比如你想查看某个分支branch_A, 那么就再后面加上|grep branch_A
+git for-each-ref --format='%(committerdate) %09 %(authorname) %09 %(refname)' | sort -k5n -k2M -k3n -k4n|grep branch_A
 ```
 
 #### 提交规范：

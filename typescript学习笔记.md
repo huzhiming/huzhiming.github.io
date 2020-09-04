@@ -298,12 +298,29 @@ function log<T extends Length>(value: T):T {
 
 
 
+
+
 ```
 内置工具类型：
 type A = Partial<T>   //构造一个类型，将T的所有属性设置为可选
 type A = Readonly<T>  //构造一个类型，将T的所有属性设置为只读
 type A = Recore<K,T>  //构造一个类型，将K的所有属性作为K  将T作为属性值赋值给
 
+
+// 类型约束
+type BaseType = string | number | boolean
+
+// 这里表示 copy 的参数 T 只能是字符串、数字、布尔这几种基础类型
+function copy<T extends BaseType>(arg: T): T {
+  return arg
+}
+
+// a必须是obj的属性
+function getValue<T, K extends keyof T>(obj: T, key: K) {
+  return obj[key]
+}
+const obj = { a: 1 }
+const a = getValue(obj, 'a')
 
 ```
 

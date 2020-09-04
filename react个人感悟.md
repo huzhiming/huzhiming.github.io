@@ -343,3 +343,28 @@ import { Router, Route, Redirect, IndexRoute, browserHistory, hashHistory } from
 
 
 
+```tsx
+// 非嵌套组件 兄弟节点通信示例
+npm install events —save
+// events.js
+import { EventEmitter } from "events";
+export default new EventEmitter();
+
+// 组件A：
+import emitter from "./events";
+this.eventEmitter = emitter.addListener("callMe",(data)=>{
+  this.setState({
+  	data
+  })
+});
+emitter.removeListener(this.eventEmitter);
+
+// 组件B：
+import emitter from "./events";
+// 触发自定义事件, 可传多个参数
+emitter.emit("callMe", "World")
+
+```
+
+
+
